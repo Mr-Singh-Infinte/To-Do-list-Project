@@ -88,6 +88,10 @@ ul li {
     -webkit-user-select: none;   
 }
 
+ul li.checked{
+    text-decoration: line-through;
+}
+
 
 ul li span{
     position: absolute;
