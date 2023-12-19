@@ -1,3 +1,4 @@
+/*-----Complete-Screen-Css---*/
 *{
     margin : 0;
     padding: 0;
@@ -5,6 +6,7 @@
     font-family: 'Bebas Neue', sans-serif;
 }
 
+/*------Containers(To-Do-Form-&-Complete-Screen----*/
 .contianer{
     width: 100%;
     height: 100vh;
@@ -22,10 +24,10 @@
     margin: 100px auto 20px;
     padding: 20px 30px 35px;
     box-shadow: 0px -5px 25px 1px rgb(11, 11, 11);
-
-
-    
+   
 } 
+
+/*------Title-Heading-Css----*/
 
 .Online-To-Do h2{
     color: rgba(101, 241, 249, 0.955);
@@ -41,12 +43,15 @@
 
 }
 
+/*------Title-Image-Css----*/
 .Online-To-Do h2 img{
     height: 35px;
     width: 40px;
     margin-left: 5px;
 }
 
+
+/*------CSS-for-To-Do-List-Display-----*/
 .display{
     display: flex;
     align-items: center;
@@ -58,6 +63,7 @@
 
 }
 
+/*-------CSS-for-Inputs-Value-----*/
 input{
     flex: 1;
     border: none;
@@ -69,6 +75,7 @@ input{
 
 }
 
+/*CSS-for-add-button-----*/
 #myBtn{
     border: none;
     outline: none;
@@ -81,6 +88,7 @@ input{
     border: 1px solid rgb(197, 197, 253);
 }
 
+/*------Css-for-Tak-Lists-----*/
 ul li {
     margin-left: 15px;
     padding: 5px;
