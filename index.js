@@ -1,5 +1,9 @@
 const inputBox = document.getElementById("task-input")
 const listContainer = document.getElementById("list-container")
+const taskCounter = document.createElement('span');
+taskCounter.textContent = `Task : 0`;
+listContainer.appendChild(taskCounter);
+
  function Add(){
     if( inputBox.value === ''){
     alert("Please Add Your Task");
@@ -12,11 +16,11 @@ const listContainer = document.getElementById("list-container")
     let span = document.createElement("span");
     span.innerHTML = "\u00d7";
     li.appendChild(span);
+    taskCounter.textContent = `Task : ${listContainer.querySelectorAll("li").length}`;
  }
  inputBox.value = "";
 }
-
-
+ 
 
 listContainer.addEventListener("click", function(e){
    if(e.target.tagName === "LI"){
@@ -24,6 +28,7 @@ listContainer.addEventListener("click", function(e){
    }
    else if (e.target.tagName === "SPAN"){
       e.target.parentElement.remove();
+      taskCounter.textContent = `Task: ${listContainer.querySelectorAll('li').length}`;
    }
 
 }, false);
