@@ -4,6 +4,7 @@ const taskCounter = document.createElement('span');
 taskCounter.textContent = `Task : 0`;
 listContainer.appendChild(taskCounter);
 
+
  function Add(){
     if( inputBox.value === ''){
     alert("Please Add Your Task");
